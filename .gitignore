@@ -1,0 +1,52 @@
+
+# Archivos compilados
+*.class
+
+# Paquetes
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Archivos y directorios de Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Archivos y directorios de Gradle
+.gradle/
+build/
+
+# Archivos de configuración del sistema y del IDE
+*.log
+*.dat
+*.lck
+*.cache
+*.DS_Store
+*.idea/
+*.vscode/
+*.eclipse
+*.settings/
+*.classpath
+*.project
+*.jks
+
+# Archivos de metadatos de OS X
+.DS_Store
+
+# Archivos de metadatos de Windows
+Thumbs.db
+Desktop.ini
+
+# Directorios específicos del proyecto (pueden variar)
+out/
+dist/
+temp/

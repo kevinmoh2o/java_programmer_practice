@@ -1,5 +1,7 @@
 package edu.kevinmohu.beans;
 
+import static edu.kevinmohu.util.Util.incrementCounter;
+
 public class Persona {
     private int id;
     private String nombre;
@@ -7,11 +9,13 @@ public class Persona {
 
 
     public Persona(){
+        this.id = incrementCounter();
         this.nombre=null;
         this.genero=false;
     }
 
     public Persona( String nombre, Boolean genero){
+        this.id = incrementCounter();
         this.nombre=nombre;
         this.genero=genero;
     }

@@ -4,11 +4,7 @@ import edu.kevinmohu.models.entities.Curso;
 
 import java.util.List;
 
-public interface CursoDao {
+public interface CursoDao extends EntidadDao<Curso,Integer> {
 
-    public void create(Curso curso);
-    public void update(Curso curso);
-    public void delete(int id);
-    public Curso find(int id);
-    public List<Curso> findAll();
+    public List<Curso> findByRangeCreditos(Integer monimo,Integer maximo);
 }

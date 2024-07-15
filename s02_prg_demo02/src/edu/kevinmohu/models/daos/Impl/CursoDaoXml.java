@@ -7,6 +7,11 @@ import java.util.List;
 
 public class CursoDaoXml implements CursoDao {
     @Override
+    public List<Curso> findByRangeCreditos(Integer monimo, Integer maximo) {
+        return null;
+    }
+
+    @Override
     public void create(Curso curso) {
         System.out.println("CursoDaoXml.create");
     }
@@ -17,12 +22,12 @@ public class CursoDaoXml implements CursoDao {
     }
 
     @Override
-    public void delete(int id) {
+    public void delete(Integer id) {
         System.out.println("CursoDaoXml.delete");
     }
 
     @Override
-    public Curso find(int id) {
+    public Curso find(Integer id) {
         System.out.println("CursoDaoXml.find");
         return null;
     }

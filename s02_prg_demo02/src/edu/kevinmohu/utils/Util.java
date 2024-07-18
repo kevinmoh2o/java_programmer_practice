@@ -4,5 +4,5 @@ import static edu.kevinmohu.utils.Tipo.*;
 
 public class Util {
 
-    public static Tipo tipo = XML;
+    public static Tipo tipo = MEMORY;
 }

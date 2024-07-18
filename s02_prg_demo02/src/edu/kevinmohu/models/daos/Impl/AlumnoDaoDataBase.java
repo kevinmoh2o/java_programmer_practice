@@ -2,19 +2,27 @@ package edu.kevinmohu.models.daos.Impl;
 
 import edu.kevinmohu.models.daos.AlumnoDao;
 import edu.kevinmohu.models.entities.Alumno;
-import edu.kevinmohu.models.entities.Curso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AlumnoDaoDataBase implements AlumnoDao {
 
-    @Override
-    public void create(Alumno curso) {
+    private List<Alumno> alumnos;
 
+    public AlumnoDaoDataBase(){
+        alumnos = new ArrayList<>();
     }
 
     @Override
-    public void update(Alumno curso) {
+    public void create(Alumno alumno) {
+        if(find(alumno.id())==null && alumno != null){
+            alumnos.add(alumno);
+        }
+    }
+
+    @Override
+    public void update(Alumno alumno) {
 
     }
 
@@ -24,13 +32,16 @@ public class AlumnoDaoDataBase implements AlumnoDao {
     }
 
     @Override
-    public Curso find(Integer id) {
-        return null;
+    public Alumno find(Integer id) {
+        return alumnos.stream()
+                .filter(item->id == item.id())
+                .findFirst()
+                .orElse(null);
     }
 
     @Override
     public List<Alumno> findAll() {
-        return null;
+        return this.alumnos;
     }
 
     @Override
@@ -40,6 +51,7 @@ public class AlumnoDaoDataBase implements AlumnoDao {
 
     @Override
     public List<Alumno> findByEstado(String nombre) {
+
         return null;
     }
 }

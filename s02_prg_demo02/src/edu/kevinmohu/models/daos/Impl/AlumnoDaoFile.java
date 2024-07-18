@@ -2,7 +2,6 @@ package edu.kevinmohu.models.daos.Impl;
 
 import edu.kevinmohu.models.daos.AlumnoDao;
 import edu.kevinmohu.models.entities.Alumno;
-import edu.kevinmohu.models.entities.Curso;
 
 import java.util.List;
 
@@ -33,7 +32,7 @@ public class AlumnoDaoFile implements AlumnoDao {
     }
 
     @Override
-    public Curso find(Integer id) {
+    public Alumno find(Integer id) {
         return null;
     }
 

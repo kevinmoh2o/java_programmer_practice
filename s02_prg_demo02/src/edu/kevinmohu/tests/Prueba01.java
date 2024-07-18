@@ -13,6 +13,7 @@ public class Prueba01 {
         CursoDao dao = DaoFactory.getInstance().getCursoDao(tipo);
         dao.create(curso01);
         //System.out.println(curso01);
+        //TODO: mostrar la lsita de 4 alumnos en memoria usando Service y Dao
     }
 
 }
